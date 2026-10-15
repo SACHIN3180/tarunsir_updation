@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            background-color: brown;
+            margin: 200px;
+            align-items: center;
+        }
+
+        .box:hover {
+            /* transform: scale(1.2); */
+            transform: scale(1.2);
+            transform-origin: bottom center;
+        }
+
+        .rotareImg {
+            position: relative;
+            width: 400px;
+            /* align-items: center;
+            margin: auto; */
+        }
+
+        .rotate {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background-color: darkkhaki;
+            /* margin: 200px; */
+            transition: 2s;
+            object-fit: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: transform 2s;
+            z-index: 2;
+
+        }
+
+        .rotate:hover {
+            transform: translate(-50%, -50%) rotate(1turn);
+            transform-origin: center center;
+        }
+
+        .rotate1 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: transform 2s;
+            z-index: 3;
+        }
+
+        .rotate1:hover {
+            transform: translate(-50%, -50%) rotateX(360deg);
+        }
+
+        .rotate2 {
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: transform 2s;
+            z-index: 0;
+        }
+
+        .rotate2:hover {
+            transform: translate(-50%, -50%) rotateY(360deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <div class="box">
+
+        </div>
+    </div>
+
+    <div class="rotareImg">
+        <img class="rotate" src="https://wallpaperaccess.com/full/5481163.jpg" alt="">
+        <img class="rotate1" src="https://tse4.mm.bing.net/th/id/OIP.Cy1BNZjTX3gwIlC1zQEFpQHaEK?r=0&pid=Api&h=220&P=0"
+            alt="">
+        <img class="rotate2" src="https://wallpaperaccess.com/full/1996311.jpg" alt="">
+
+    </div>
+
+</body>
+<script></script>
+
+</html>
