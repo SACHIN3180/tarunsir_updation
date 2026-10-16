@@ -80,6 +80,90 @@
         .rotate2:hover {
             transform: translate(-50%, -50%) rotateY(360deg);
         }
+
+        .twoSideImg {
+            width: 100%;
+            margin: 200px;
+            text-align: center;
+        }
+
+        .flipDiv {
+            width: 1240px;
+            display: flex;
+            position: relative;
+        }
+
+        .divFlower {
+            width: 1240px;
+            /* position: relative; */
+        }
+
+        .divFlower img {
+            width: 300px;
+            height: 400px;
+
+        }
+
+        .divButterfly {
+            position: absolute;
+            top: 0;
+            left: 470px;
+            opacity: 0;
+            transition: 2s;
+        }
+
+        .flipDiv:hover .divButterfly {
+            opacity: 1;
+        }
+
+        .divButterfly img {
+            width: 300px;
+            height: 400px;
+        }
+
+        .rotateSection {
+            width: 100%;
+            text-align: center;
+        }
+
+        .mainDivRotate {
+            width: 1240px;
+            position: relative;
+        }
+
+        .divGorilla img {
+            width: 400px;
+            height: 500px;
+            transform: rotateY(270degre);
+        }
+
+        .divGorilla,
+        .divBear {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: transform 1s;
+            backface-visibility: hidden;
+        }
+
+        .divBear img {
+            width: 400px;
+            height: 500px;
+            left: 420px;
+        }
+
+
+        .divBear {
+            transform: rotateY(180deg);
+        }
+
+        .mainDivRotate:hover .divGorilla {
+            transform: rotateY(180deg);
+        }
+
+        .mainDivRotate:hover .divBear {
+            transform: rotateY(0deg);
+        }
     </style>
 </head>
 
@@ -98,6 +182,34 @@
         <img class="rotate2" src="https://wallpaperaccess.com/full/1996311.jpg" alt="">
 
     </div>
+
+    <section class="twoSideImg">
+        <div class="flipDiv">
+            <div class="divFlower">
+                <img src="https://img.magnific.com/free-photo/pink-gerbera-flower-garden_1373-15.jpg?semt=ais_hybrid&w=740&q=80"
+                    alt="">
+            </div>
+            <div class="divButterfly">
+                <img src="https://cdn.pixabay.com/photo/2023/04/25/03/02/butterfly-7949342_1280.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="rotateSection">
+        <div class="mainDivRotate">
+            <div class="divGorilla">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvCbvNMduhLhElEZUInac8EaPo5GtvthCb_GlVvZ7l69Ydb5-KlYeHM11VaahKLXx2M1rAloIDS-HCTnVbuBqdNni_LRpRYXKNcacV7A&s=10"
+                    alt="">
+            </div>
+            <div class="divBear">
+                <img src="https://i.guim.co.uk/img/media/11d4c182d094199e26ddb36febe67123a9bbc93a/34_246_2966_4275/master/2966.jpg?width=445&dpr=1&s=none&crop=none"
+                    alt="">
+            </div>
+        </div>
+    </section>
+
+
 
 </body>
 <script></script>

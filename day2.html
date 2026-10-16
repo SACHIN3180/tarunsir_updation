@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 400px;
+            height: 400px;
+            background-color: blueviolet;
+            transition: 2s;
+        }
+
+        .box:hover {
+            background-color: brown;
+        }
+
+        .mainSectionImg {
+            width: 100%;
+            margin: 25px 0px;
+        }
+
+        .maivDivImg {
+           
+            width: 1250px;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+        }
+
+        .mainImgClass{
+            position: relative;
+           
+        }
+       
+
+        .imgInside {
+            width: 400px;
+            height: 500px;
+        }
+        .divHover{
+            width: 100%;
+            height: 100%;
+            text-align: left;
+            position: absolute;
+            background-color: burlywood;
+            top: 0;
+            left: 0 ;
+            /* display: none; */
+            opacity: 0;
+             transition: 5s;
+        }
+        .divHoverImg {
+            width: 200px;
+        }
+       .mainImgClass:hover .divHover{
+            /* display: block; */
+                opacity: 1;
+        }
+      
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+
+    </div>
+
+    <section class="mainSectionImg">
+        <div class="maivDivImg">
+
+            <div class="mainImgClass">
+                <img class="imgInside" src="img/PHK cover.png" alt="">
+                <div class="divHover">
+                    <img class="divHoverImg" src="img/PBJ- Accomodation.jpg" alt="">
+                    <h4>
+                        The Peninsula Hong Kong
+                    </h4>
+                    <p>
+                        Overlooking Victoria Harbour, the iconic “Grande Dame” is famed for its restaurants, luxury shopping arcade, and opulent spa.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mainImgClass">
+                <img class="imgInside" src="img/PSH - Exterior.jpg" alt="">
+                <div class="divHover">
+                    <!-- <img class="divHoverImg" src="img/PBJ- Accomodation.jpg" alt=""> -->
+                </div>
+            </div>
+            <div class="mainImgClass">
+                <img class="imgInside" src="img/PBJ Cover.JPG" alt="">
+                <div class="divHover">
+                    <!-- <img class="divHoverImg" src="img/PBJ- Accomodation.jpg" alt=""> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+
+</html>
