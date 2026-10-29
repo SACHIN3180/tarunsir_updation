@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img id="img1"
+        src="https://i2-prod.chroniclelive.co.uk/article34750663.ece/ALTERNATES/s1200d/0_Tiger-surgery-at-YWP.jpg"
+        alt="" width="500" height="500">
+    <img id="img2"
+        src="https://static.vecteezy.com/system/resources/previews/057/275/568/non_2x/majestic-lion-staring-intensely-golden-mane-gleaming-under-the-warm-light-of-the-african-savanna-a-regal-animal-in-its-natural-habitat-free-photo.jpg"
+        alt="" width="500" height="500">
+    <button onclick="swapImages()">Swap Images</button>
+</body>
+<script>
+    let imgElemet1 = document.querySelector('#img1')
+    let imgElemet2 = document.querySelector('#img2')
+
+    function swapImages() {
+        let img1 = imgElemet1.src
+        let img2 = imgElemet2.src
+
+        imgElemet1.src = img2
+        imgElemet2.src = img1
+    }
+</script>
+
+</html>

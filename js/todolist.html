@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            list-style-type: none;
+        }
+
+
+        .boxDiv {
+            width: 600px;
+            border: 1px solid black;
+            margin: 200px auto;
+            text-align: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .secMainDiv {
+            margin: 10px;
+        }
+
+        .secMainDiv button {
+            background-color: chocolate;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .secMainDiv input {
+            padding: 10px;
+        }
+
+        .complete ul {
+            gap: 5px;
+            justify-content: center;
+            margin: 20px auto;
+            cursor: pointer;
+        }
+
+        .btnComplete {
+            
+            background-color: chartreuse;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .btnDelete {
+            background-color: aquamarine;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .ulLisit li{
+            display: block;
+            margin: auto;
+            justify-content: center;
+        }.libtn{
+            display: flex;
+            
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="boxDiv">
+        <h1>TodoList</h1>
+        <div class="secMainDiv">
+            <input id="inputEnter" type="text" placeholder="Enter">
+            <button id="addBtn">Add</button>
+        </div>
+
+        <div id="ulList" class="complete">
+            <ul id='ulLisitel' class="ulLisit"></ul>
+        </div>
+    </div>
+
+</body>
+<script src="todolist.js"></script>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+            box-sizing: border-box;
+        }
+        .mainBox{
+            width: 100%;
+            margin:  100px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .cardDiv{
+            width: 800px;
+             margin: auto;
+            align-items: center;
+            padding: 15px;
+        }
+        .card{
+            padding: 10px;
+            border: 1px solid black;
+            margin: 5px;
+        }
+        .card h2{
+            padding: 5px;
+            background-color: aqua;
+            margin: 2px;
+            cursor: pointer;
+        }
+        .card p{
+            display: none;
+        }
+        .show{
+            display: block !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainBox">
+        <div class="cardDiv">
+            <div class="card"> 
+                <h2>
+                <span>+</span>    What is HTML?
+                </h2>
+                <p>
+                    Hyper Text MArk up Langauge
+                </p>
+            </div>
+            <div class="card"> 
+                <h2>
+                 <span>+</span>    What is CSS?
+                </h2>
+                <p>
+                    Cascading 
+                </p>
+            </div>
+            <div class="card"> 
+                <h2>
+                  <span>+</span>   What is Js?
+                </h2>
+                <p>
+                    Java Script 
+                </p>
+            </div>
+            <div class="card"> 
+                <h2>
+                  <span>+</span>   What is React?
+                </h2>
+                <p>
+                    React is Java Script Library
+                </p>
+            </div>
+            <div class="card"> 
+                <h2>
+                  <span>+</span>   What is Node+Express js?
+                </h2>
+                <p>
+                    Express.js is a minimal and flexible Node.js web framework used to build web applications and REST APIs.
+                </p>
+            </div>
+            <div class="card"> 
+                <h2>
+                  <span>+</span>   What is LLM?
+                </h2>
+                <p>
+                    Large Language Models.
+                </p>
+            </div>
+            <div class="card"> 
+                <h2>
+                  <span>+</span>   What is RAG ?
+                </h2>
+                <p>
+                    Retrieval-Augmented Generation.
+                </p>
+            </div>
+            <div class="card"> 
+                <h2>
+                  <span>+</span>    What Are AI Agents ?
+                </h2>
+                <p>
+                    Think of AI Agents as autonomous digital assistants powered by AI. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="accordian.js"></script>
+
+</html>
